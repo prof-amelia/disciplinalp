@@ -1,0 +1,30 @@
+nome = input("Digite o nome do cliente: ")
+renda = float(input("Digite a renda mensal: "))
+
+if renda >= 10000:
+    classificacao = "Cliente Premium Plus"
+
+elif renda >= 8000:
+    classificacao = "Cliente Premium"
+
+elif renda >= 6000:
+    classificacao = "Cliente Ouro"
+
+elif renda >= 4000:
+    classificacao = "Cliente Prata"
+
+elif renda >= 2500:
+    classificacao = "Cliente Bronze"
+
+elif renda >= 1500:
+    classificacao = "Cliente Básico"
+
+elif renda >= 800:
+    classificacao = "Cliente Baixa Renda"
+
+else:
+    classificacao = "Cliente de Risco"
+
+print("Cliente:", nome)
+print("Renda:", renda)
+print("Classificação:", classificacao)
